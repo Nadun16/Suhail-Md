@@ -34,9 +34,9 @@ global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]
 
 //========================= [ BOT SETTINGS ] =========================\\
 global.style = process.env.STYLE   || '5'  // put '1' to "5" here to check bot styles
-global.flush = process.env.FLUSH   || "false"; // Make it "true" if bot not responed
-global.gdbye = process.env.GOODBYE || "false"; 
-global.wlcm  = process.env.WELCOME || "false";  // Make it "false" for disable WELCOME 
+global.flush = process.env.FLUSH   || "true"; // Make it "true" if bot not responed
+global.gdbye = process.env.GOODBYE || "true"; 
+global.wlcm  = process.env.WELCOME || "true";  // Make it "false" for disable WELCOME 
 
 global.warncount = process.env.WARN_COUNT || 3
 global.disablepm = process.env.DISABLE_PM || "false"
@@ -48,14 +48,14 @@ global.waPresence= process.env.WAPRESENCE ||  "null" ; // 'unavailable' | 'avail
 
 
 //========================= [ AUTO READ MSGS & CMDS ] =========================\\
-global.readcmds = process.env.READ_COMMAND || "false"
-global.readmessage = process.env.READ_MESSAGE || "false"
+global.readcmds = process.env.READ_COMMAND || "true"
+global.readmessage = process.env.READ_MESSAGE || "true"
 global.readmessagefrom = process.env.READ_MESSAGE_FROM || "null,94776617313";
 
 
 //========================= [ AUTO SAVE & READ STATUS ] =========================\\
 global.read_status = process.env.AUTO_READ_STATUS || "true"
-global.save_status = process.env.AUTO_SAVE_STATUS || "false"
+global.save_status = process.env.AUTO_SAVE_STATUS || "true"
 global.save_status_from =  process.env.SAVE_STATUS_FROM  || "null,94776617313";
 global.read_status_from =  process.env.READ_STATUS_FROM  ||  "94776617313,94776617313";
 
